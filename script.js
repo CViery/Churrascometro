@@ -1,7 +1,6 @@
 let inputAdultos = document.getElementById("adultos")
 let inputCriancas= document.getElementById("criancas")
 let inputDuracao = document.getElementById("duracao")
-
 let resultado = document.getElementById("resultado")
 
 
@@ -17,9 +16,9 @@ const calcular = ()=>{
     let qntdTotalCerveja = cerveja* adultos
     let qntdTotalBebidas = bebidas* adultos + (bebidas/2 * criancas)
 
-    resultado.innerHTML = `<p>Total de carnes em gramas: ${qntdTotalCarne/1000}kg<p>`
-    resultado.innerHTML += `<p>Total de latas de cerveja: ${Math.ceil(qntdTotalCerveja/355)}<p>`
-    resultado.innerHTML += `<p>Total de garrafas de 2 lt de bebidas: ${Math.ceil(qntdTotalBebidas/2000)}<p>`
+    resultado.innerHTML = `<p><img class="vetores" src="./imgs/steak.png">  ${qntdTotalCarne/1000} Kilos de carnes<p>`
+    resultado.innerHTML += `<p><img class="vetores" src="./imgs/beer.png">  ${Math.ceil(qntdTotalCerveja/355)} Latas de cerveja de 355ml <p>`
+    resultado.innerHTML += `<p><img class="vetores" src="./imgs/refri.png"> ${Math.ceil(qntdTotalBebidas/2000)}  Refrigerante de 2L<p>`
 }
 const carnePP = (duracao)=>{
     if(duracao >= 6){

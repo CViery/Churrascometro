@@ -4,25 +4,48 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./imgs/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
     <title>Churrascometro</title>
 </head>
 <body>
-    <div class="container">
-        <h1>Churrascometro</h1>
-        <input id="adultos" name="adultos" type="number" placeholder="Num. Adultos">
-        <input id="criancas" name="criancas" type="number" placeholder="Num. Crianças">
-        <input id="duracao" name="duracao" type="number" placeholder="Duração(hrs)">
-
-
-
-        <button onclick="calcular()">Enviar</button>
-        
-
-        <div id="resultado"></div>
-
-
-    </div>
+    <header>
+        <img class="logo" src="./imgs/logo.png" alt="">
+    </header>
+    <main>
+        <div class="slogan" style="display: none;">
+            <h2>
+                "Churrascometro: O seu guia infalível para o churrasco perfeito!"</h2>
+        </div>
+        <div class="container">
+            <h1>Churrascometro</h1>
+            <input id="adultos" name="adultos" type="number" placeholder="Num. Adultos">
+            <input id="criancas" name="criancas" type="number" placeholder="Num. Crianças">
+            <input id="duracao" name="duracao" type="number" placeholder="Duração(hrs)">
+    
+    
+    
+            <button onclick="calcular()">Enviar</button>
+            
+    
+            <div id="resultado"></div>
+    
+    
+        </div>
+    </main>
+    <footer>
+        <h4>Desenvolvido por Cristian Viery</h4>
+        <div>
+            <a href="https://www.linkedin.com/in/cristianviery/" target="_blank"><img class="logos" src="./imgs/likedin.png" alt="Likedin"></a>
+            <a href="https://www.instagram.com/c_vierygs12/" target="_blank"><img class="logos" src="./imgs/insta.png" alt="Instagram"></a>
+            <a href="https://wa.me/5511988453589" target="_blank"><img class="logos" src="./imgs/whats.png" alt="Whatsapp"></a>
+            
+        </div>
+    </footer>
     <script src="script.js"></script>
+    <script>
+        $(".slogan").fadeIn(3000)
+    </script>
 </body>
 </html>
